@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('../Fonts/Pretendard-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Semibold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory-Light';
+    src: url('../Fonts/Maplestory-Light.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory-Bold';
+    src: url('../Fonts/Maplestory-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+.Album-Container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.Album-Logo {
+    position: absolute;
+    top: 2%;
+    width: 149px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.Album-Logo img {
+    width: 100%;
+}
+
+.Album-imgInfo {
+    position: absolute;
+    top: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 1;
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    text-align: center;
+}
+
+.Album-imgInfo img {
+    margin-top: 3px;
+    width: 13px;
+}
+
+.Album-imgInfo span {
+    font-family: 'Pretendard-Bold';
+    font-size: 18px;
+}
+
+.Album {
+    display: flex;
+    justify-content: center;
+}
+
+
+.Album-next {
+    position: absolute;
+    top: 30%;
+    right: -30%;
+    width: 60%;
+    height: 53%;
+    z-index: 3;
+    opacity: 0.4;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px #00000070;
+    transform: rotate(9deg);
+}
+
+.Album-prev {
+    position: absolute;
+    top: 22%;
+    left: -26%;
+    width: 60%;
+    height: 53%;
+    z-index: 3;
+    opacity: 0.4;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px #00000070;
+    transform: rotate(350deg);
+}
+
+.Album-prev img, .Album-next img{
+    width: 94%;
+    height: 96%;
+    object-fit: cover;
+}
+
+.Album-prev-gallery, .Album-next-gallery {
+    width: 83%;
+    height: 65%;
+    position: absolute;
+    top: 10%;
+    background-color: #E3E3E3;
+}
+
+.Album-main-back {
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    height: 56%;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px #00000070;
+    z-index: 4;
+    transform: rotate(352deg);
+}
+
+.Album-main-front{
+    position: absolute;
+    top: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 53%;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px #00000070;
+    z-index: 5;
+}
+
+.Album-Header {
+    position: absolute;
+    top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+    z-index: 4;
+}
+
+.Album-Date {
+    margin-left: 17%;
+    font-family: 'Pretendard-ExtraLight';
+    color: #424242;
+    font-size: 11px;
+}
+
+.Album-SaveButton {
+    background-color: #43A1FF;
+    width: 57px;
+    height: 19px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Pretendard-Medium';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Album-Gallery {
+    width: 83%;
+    height: 65%;
+    position: absolute;
+    background-color: #E3E3E3;
+    border-radius: 4px;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: xywh(0 0px 100% 100% round 4px 0);
+}
+
+.Album-Gallery img {
+    width: 94%;
+    height: 96%;
+    object-fit: cover;
+}
+
+.Album-Vector{
+    position: absolute;
+    top: 66%;
+    width: 71%;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.Album-title {
+    position: absolute;
+    top: 68%;
+    width: 68%;
+    font-family: 'Maplestory-Bold';
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.Album-contents {
+    position: absolute;
+    top: 79%;
+    width: 65%;
+    height: 18%;
+    font-family: 'Maplestory-Light';
+    color: #000000;
+    font-size: 10px;
+    line-height: 15px;
+    overflow: scroll;
+    z-index: 4;
+    word-break: keep-all;
+}
+
+.Album-contents::-webkit-scrollbar {
+    display: none;
+}
+
+.QuoteLeft {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    width: 14px;
+    height: 14px;
+    z-index: 5;
+}
+
+.QuoteRight {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 72%;
+    top: 69%;
+    z-index: 5;
+}
+
+.tape1 {
+    position: absolute;
+    width: 118px;
+    height: 108px;
+    top: 14%;
+    left: 3%;
+    z-index: 5;
+}
+
+.tape2 {
+    position: absolute;
+    width: 118px;
+    height: 108px;
+    top: 67%;
+    left: 65%;
+    z-index: 5;
+}
+.albumBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+}

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../Fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.activities-header {
+    position: absolute;
+    top: 3%;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 2;
+}
+
+.activities-Header-Logo {
+    width: 91px;
+}
+
+.activities-Header-Logo img {
+    width: 100%;
+}
+
+.activities-Header-ver2 {
+    width: 61px;
+}
+
+.activities-Header-ver2 img {
+    width: 100%;
+}
+
+.activities-Profile {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+.activities-ProfileBox {
+    width: 83px;
+    height: 83px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-ProfileImg {
+    width: 79px;
+    height: 79px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-ProfileImg img {
+    width: 56.5%;
+    height: 85.5%;
+}
+
+.activities-userName {
+    font-family: 'Pretendard-Bold';
+    font-size: 20px;
+    color: #FFBF00;
+}
+
+.activities-title {
+    text-align: left;
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.activities-button-container {
+    position: fixed;
+    top: 27.5%;
+    display: flex;
+    width: 85%;
+    height: 54%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 35px;
+    gap: 30px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.activities-button-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* 공통 스타일 */
+.activities-button-container>div {
+    width: 100%;
+    border-radius: 35px !important;
+    max-height: 95px;
+    min-height: 95px;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Pretendard-Bold';
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.activities-Name {
+    margin-left: 40px;
+}
+
+.deco-heart-back {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.deco-heart-back img {
+    width: 19px;
+    height: 16px;
+}
+
+.activities-TopFrame {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 0;
+}
+
+/* 각 버튼의 고유 스타일 */
+.activities-1Button {
+    background-image: url('../Images/myactivityButtonDeco/FirstButton.png');
+}
+
+.activities-2Button {
+    background-image: url('../Images/myactivityButtonDeco/SecondButton.png');
+
+}
+
+.activities-3Button {
+    background-image: url('../Images/myactivityButtonDeco/ThirdButton.png');
+}
+
+.activities-4Button {
+    background-image: url('../Images/myactivityButtonDeco/FourthButton.png');
+}

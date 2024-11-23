@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.loginContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Pretendard-Medium';
+}
+
+
+.login_logoMedium{
+    width: 45%;
+    margin-top: 194px;
+}
+
+.login_logoMedium img{
+    width: 100%;
+}
+
+.loginForm {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap : 11px;
+    width: 73%;
+}
+
+.idBox, .pwBox {
+    height: 45px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 15px;
+    padding-left: 21px;
+}
+
+.idBox::placeholder, .pwBox::placeholder {
+    font-family: 'Pretendard-Medium';
+    color: #9F9F9F;
+}
+
+
+.loginButton {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73%;
+    height: 45px;
+    background-color: #43A1FF;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.joinText {
+    margin-top: 18px;
+    color: #9F9F9F;
+    font-size: 14px;
+}
+
+.joinButton {
+    font-family: 'Pretendard-Medium';
+    color: #000000;
+}
+
+.errorMessage {
+    font-family: 'Pretendard-Regular';
+    color: #FF0000;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}

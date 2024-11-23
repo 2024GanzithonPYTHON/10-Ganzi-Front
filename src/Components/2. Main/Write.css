@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory-Light';
+    src: url('../Fonts/Maplestory-Light.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory-Bold';
+    src: url('../Fonts/Maplestory-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+.Write-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.Write-Form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Write-header {
+    width: 100%;
+    height: 69px;
+    font-family: 'Pretendard-Regular';
+    font-size: 22px;
+    color: #848484;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24%;
+}
+
+.XbuttonFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 54px;
+}
+
+.Xbutton {
+    width: 27px;
+    height: 27px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+
+.submitButton {
+    width: 52px;
+    height: 52px;
+}
+
+.hrLine1 {
+    width: 100%;
+    height: 1.5px;
+    background-color: #E2E2E2;
+}
+
+.Write-TitleArea {
+    width: 82.5%;
+    height: 68px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Write-TitleInputImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+
+}
+
+.Write-TitleInput {
+    width: 80%;
+    font-family: 'Maplestory-Light';
+    font-size: 25px;
+    color: #000000;
+    border: none;
+    outline: none;
+}
+
+.Write-TitleInput::placeholder {
+    font-family: 'Maplestory-Light';
+    font-size: 25px;
+    color: #B6B6B6;
+}
+
+.hrLine2 {
+    width: 82.5%;
+    height: 1.5px;
+    background-color: #E2E2E2;
+    z-index: 5;
+}
+
+.Write-place {
+    width: 82.5%;
+    height: 53px;
+    font-family: 'Maplestory-Light';
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+.Write-place::placeholder {
+    font-family: 'Maplestory-Light';
+    font-size: 18px;
+    color: #B6B6B6;
+}
+
+.Write-Contents {
+    margin-top: 22px;
+    width: 82.5%;
+    height: 50%;
+    font-family: 'Maplestory-Light';
+    font-size: 18px;
+    color: #000000;
+    outline: #0075EA;
+    border: none;
+    text-align: left;
+}
+
+.Write-Contents::placeholder {
+    width: 82.5%;
+    font-family: 'Maplestory-Light';
+    font-size: 18px;
+    color: #B6B6B6;
+}

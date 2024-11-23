@@ -1,0 +1,29 @@
+.Apt_Header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.Apt_backspace {
+    position: absolute;
+    left: 29px;
+    width: 14px;
+    height: 28px;
+}
+
+.Apt_backspace img {
+    width: 100%;
+    height: 100%;
+}
+
+.Apt_HeaderLogo {
+    width: 38%;
+    display: flex;
+    justify-content: center;
+}
+
+.Apt_HeaderLogo img {
+    width: 100%;
+}

@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Semibold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../Fonts/Pretendard-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caveat-Bold';
+    src: url('../Fonts/Caveat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Home-Conatainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+.Home-Header {
+    position: absolute;
+    top: 3%;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+.Home-Header-Logo {
+    width: 91px;
+}
+
+.Home-Header-Logo img {
+    width: 100%;
+}
+
+.Home-Header-myPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+}
+
+.Home-Header-myPage img {
+    width: 200%;
+    height: 200%;
+}
+
+.Daily-Recommended-Container {
+    position: relative;
+    width: 100%;
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.Daily-Recommended-ActivityImage,
+.Daily-Recommended-ActivityImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.DoubleSparkle {
+    position: absolute;
+    top: 24%;
+    right: 6%;
+    width: 71px;
+    z-index: 4;
+}
+
+.ActivityDetail {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000060;
+    border-radius: 12px;
+    width: 74px;
+    height: 24px;
+    font-family: 'Pretendard-Medium';
+    font-size: 14px;
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.Daily-Recommended-ActivityText {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pretendard-Semibold';
+    font-size: 24px;
+    color: #000000;
+    text-align: right;
+    position: absolute;
+    top: 38%;
+    right: 7%;
+    z-index: 4 !important;
+    line-height: 30px;
+}
+
+.Daily-Recommended-ActivityTextByGPT {
+    font-family: 'Pretendard-Regular';
+    color: #000000;
+    font-size: 16px;
+    z-index: 4;
+}
+
+.Conversation-list-with-Child-ByAI {
+    margin-top: 3%;
+    width: 86%;
+    height: 94px;
+    padding-bottom: 20px;
+    background-color: #F4F4F4;
+    border-radius: 11px;
+    z-index: 4;
+}
+
+.Conversation-Title {
+    margin-top: 10px;
+    margin-left: 21px;
+    font-family: 'Pretendard-Medium';
+    font-size: 14px;
+}
+
+.Spanlist {
+    font-family: 'Caveat-Bold';
+    color: #FFBF00;
+    font-size: 20px;
+}
+
+.first-recommendation-list,
+.second-recommendation-list {
+    margin-top: 13px;
+    margin-left: 21px;
+    margin-right: 5px;
+    font-family: 'Pretendard-Light';
+    font-size: 13px;
+}
+
+.AdContainer {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 86%;
+    height: 19.5%;
+    border-radius: 11px;
+    z-index: 5;
+}
+
+.AdSlider {
+    display: flex;
+}
+
+.AdSlide {
+    flex: 0 0 100%;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AdSlide img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.img-frame {
+    position: fixed;
+    bottom: 0;
+    width: 105%;
+    height: 68%;
+    z-index: 3;
+}
+
+/* 모달 css */
+
+.overlay {
+    overflow: hidden !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    background-color: #54545470;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4999;
+}
+
+.modal1 {
+    overflow: hidden !important;
+    width: 100vw;
+    height: 80vh;
+    background: #ffffff;
+    border-radius: 0px 0px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    z-index: 5000;
+}
+
+.detailModal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detailModal-image {
+    width: 100%;
+    height: 46vh;
+    z-index: 5001;
+}
+
+.detailModal-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailModal-DoubleSparkle{
+    position: absolute;
+    top: 24%;
+    right: 6%;
+    width: 71px;
+    z-index: 5003;
+}
+
+.detailModal-ActivityText {
+    position: absolute;
+    top: 38%;
+    right: 7%;
+    font-family: 'Pretendard-Semibold';
+    font-size: 24px;
+    color: #000000;
+    text-align: right;
+    line-height: 30px;
+    z-index: 5003;
+}
+
+.detailModal-ActivityTextByGPT {
+    font-family: 'Pretendard-Regular';
+    color: #000000;
+    font-size: 16px;
+}
+
+
+.detailModal-dotVector {
+    width: 83%;
+    position: absolute;
+    top: 48%;
+    z-index: 5003;
+}
+
+.detailModal-contents {
+    color: #505050;
+    font-family: 'Pretendard-Regular';
+    font-size: 13px;
+    text-align: left;
+    width: 83%;
+    height: 20%;
+    position: absolute;
+    top: 52%;
+    z-index: 5003;
+    overflow: scroll;
+    word-break: keep-all;
+}
+
+.detailModal-contents::-webkit-scrollbar {
+    display: none;
+}
+.detailModal-dip {
+    position: absolute;
+    top: 71%;
+    left: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    z-index: 5003;
+}
+
+.detailModal-dipIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.detailModal-dipText {
+    font-family: 'Pretendard-Light';
+    font-size: 13px;
+    color: #505050;
+}
+
+.detailModal-closeModal {
+    position: absolute;
+    top: 73%;
+    right: 9%;
+    width: 24px;
+    height: 24px;
+    z-index: 5003;
+}
+
+.detailModal-imgFrame{
+    position: absolute;
+    top: 33%;
+    width: 105%;
+    height: 40%;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 5002;
+}

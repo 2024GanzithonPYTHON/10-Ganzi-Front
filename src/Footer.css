@@ -1,0 +1,62 @@
+.button-container {
+    position: absolute;
+    bottom: 0.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    z-index: 10;
+}
+
+.button-album,
+.button-home,
+.button-myactivity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+    z-index: 11;
+}
+
+.button-album,
+.button-myactivity {
+    margin-top: 7%;
+    color: #727272;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-album img {
+    width: 40px;
+}
+
+.button-myactivity img {
+    width: 40px;
+}
+
+.button-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    background-color: #BBDDFF15;
+}
+
+.button-home img {
+    width: 60px;
+}
+
+.footerFrame {
+    position: fixed;
+    bottom: -30px;
+    z-index: 10;
+}

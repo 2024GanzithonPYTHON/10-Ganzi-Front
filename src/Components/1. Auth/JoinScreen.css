@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../Fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../Fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Semibold';
+    src: url('../Fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../Fonts/Pretendard-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.join-page-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-container {
+    width: 100%;
+    font-family: 'Pretendard-Medium';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-subcontainer1,
+.join-subcontainer2,
+.join-subcontainer4 {
+    margin-top: 132px;
+    width: 73%;
+    height: 41%;
+}
+
+.join-title-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+
+.join-title {
+    font-size: 32px;
+}
+
+.join-progress {
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+}
+
+.join-description {
+    margin-top: 10px;
+    font-size: 17.74px;
+
+}
+
+.warning-message {
+    font-family: 'Pretendard-Regular';
+    color: #FF0000;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.join-form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+    width: 100%;
+}
+
+.join-input-name,
+.join-input-id,
+.join-input-password,
+.join-input-fullname,
+.join-input-age {
+    padding-left: 21px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    border: none;
+    outline: none;
+    font-family: 'Pretendard-Medium';
+    font-size: 15px;
+    color: #000000;
+}
+
+.join-form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 62px;
+    width: 100%;
+}
+
+.join-next-button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #43A1FF;
+    margin-top: 28px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Pretendard-Semibold';
+    font-size: 15px;
+}
+
+.join-next-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #43A1FF;
+    margin-top: 49px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Pretendard-Semibold';
+    font-size: 15px;
+}
+
+.join-subcontainer3 {
+    margin-top: 38.85px;
+    width: 80%;
+    height: 41%;
+}
+
+.join-subdescription {
+    font-size: 15px;
+    font-family: Pretendard-Light;
+    color: #6E6E6E;
+}
+
+.join-activity-selection {
+    margin-top: 27px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 105px);
+    grid-template-rows: repeat(4, 105px);
+    gap: 14px;
+    overflow-y: hidden;
+}
+
+.grid-item {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.activity-label {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    background-color: transparent;
+    font-family: 'Pretendard-Semibold';
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: right;
+    white-space: pre-wrap;
+}
+
+.check-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 46px !important;
+    height: 46px !important;
+}  
+
+
+.grid-item.selected .activity-label {
+    display: none;
+}
+
+.grid-item.selected {
+    border: 3px solid #0075EA;
+    border-radius: 20px;
+    width: 99px;
+    height: 99px;
+}
+
+.join-next-button3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-next-button3.inactive {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.join-next-button3.active {
+    width: 73%;
+    height: 45px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Pretendard-Semibold';
+    font-size: 15px;
+    background-color: #43A1FF;
+    color: white;
+}
+
+.join-form3 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.address-display {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 21px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    border: none;
+    outline: none;
+    margin-top: 36px;
+    font-family: 'Pretendard-Medium';
+    font-size: 15px;
+    color: #000000;
+}
+
+.address-search-button {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 19px;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Pretendard-Semibold';
+    font-size: 15px;
+    text-align: center;
+}
+
+.join-next-button4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 77px;
+    width: 73%;
+    height: 45px;
+    font-family: 'Pretendard-Semibold';
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #43A1FF;
+}
+
+.join-subcontainer5, .join-subcontainer5 img{
+    width: 100%;
+}
+
+.join-complete-message1 {
+    margin-top: 35px;
+    font-family: 'Pretendard-Semibold';
+    font-size: 21.71px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.join-complete-message2{
+    margin-top: 15px;
+    font-family: 'Pretendard-Regular';
+    font-size: 13.03px;
+    line-height: 17.4px;
+    color: #747474;
+}
+.join-subcontainer7 {
+    width: 89%;
+}
+.postcode-embed {
+    width: 100%;
+    height: 381px;
+    margin-top: 15px;
+    overflow: hidden;
+}
