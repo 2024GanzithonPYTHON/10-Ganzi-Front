@@ -227,7 +227,7 @@ function HomeScreen() {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            //'Authorization': `Bearer ${apiKey}`,
+                            'Authorization': `Bearer ${apiKey}`,
                         },
                         body: JSON.stringify({
                             model: 'gpt-4',
@@ -280,7 +280,7 @@ function HomeScreen() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    //'Authorization': `Bearer ${apiKey}`,
+                    'Authorization': `Bearer ${apiKey}`,
                 },
                 body: JSON.stringify({
                     model: 'gpt-4o',

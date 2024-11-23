@@ -29,6 +29,7 @@ function WritePost() {
         navigate('/myactivities');
     };
 
+    const [showModal, setShowModal] = useState(false);
 
     // 파일 첨부 이미지로 변경해주는 함수
     const handleFileChange = (e) => {
@@ -69,7 +70,7 @@ function WritePost() {
                 location: locationInfo,
             });
 
-            alert('글이 성공적으로 저장되었습니다!');
+            setShowModal(true);
             navigate('/album');
         } catch (error) {
             console.error('Error saving post:', error);
@@ -79,8 +80,21 @@ function WritePost() {
         }
     };
 
+    const closeModal = () => {
+        setShowModal(false);
+        navigate('/album');
+    };
+
     return (
         <div className="Write-container">
+            {showModal && (
+                <div className="modal-overlay">
+                    <div className="modal3">
+                        <h2>글이 성공적으로 저장되었습니다!</h2>
+                        <button onClick={closeModal}>확인</button>
+                    </div>
+                </div>
+            )}
             <form className="Write-Form" onSubmit={handleSubmit}>
                 <div className="Write-header">
                     <div className="XbuttonFrame"><img className="Xbutton" src={Xbutton} onClick={handleMyactivity} /></div>
