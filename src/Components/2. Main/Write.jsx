@@ -29,7 +29,7 @@ function WritePost() {
         navigate('/myactivities');
     };
 
-    
+
     // 파일 첨부 이미지로 변경해주는 함수
     const handleFileChange = (e) => {
         if (e.target.files[0]) {
@@ -105,7 +105,6 @@ function WritePost() {
                     />
                     <input
                         id="imageInput"
-                        className="Write-TitleInputImage"
                         type="file"
                         accept="image/*"
                         onChange={handleFileChange}
